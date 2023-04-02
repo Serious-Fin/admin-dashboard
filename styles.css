@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.root-container {
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 180px 1fr;
+}
+
+
+.sidebar {
+    background-color: rgb(25, 146, 212);
+    grid-area: 1/1/3/2;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    grid-area: 1/2/2/3;
+}
+
+.contents {
+    background-color: rgb(226, 232, 240);
+    grid-area: 2/2/3/3;
+}
