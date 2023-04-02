@@ -4,15 +4,18 @@
 }
 
 
+
+
 .root-container {
     background-color: green;
     width: 100%;
     height: 100vh;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 230px 1fr;
     grid-template-rows: 180px 1fr;
 }
+
 
 
 
@@ -82,4 +85,72 @@
 .contents {
     background-color: rgb(226, 232, 240);
     grid-area: 2/2/3/3;
+    display: grid;
+    gap: 20px;
+    padding: 15px;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contents > .projects-section {
+    background-color: aquamarine;
+    grid-row: 1/3;
+}
+
+.projects-section > .projects {
+    background-color: blueviolet;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 190px;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-card {
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.contents > .announcements-section {
+    background-color: rgb(17, 179, 17);
+}
+
+.announcements-section > .announcements {
+    background-color: blueviolet;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    gap: 3px;
+    grid-auto-rows: 1fr 1px 1fr 1px 1fr;
+}
+
+.announcement-card {
+    background-color: yellow;
+}
+
+.separator {
+    background-color: rgba(75, 75, 75, 0.418);
+}
+
+.contents > .trending-section {
+    background-color: rgb(131, 131, 131);
+}
+
+.trending-section > .trending {
+    background-color: blueviolet;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 245px;
+    display: grid;
+}
+
+.trending-card {
+    background-color: yellow;
+    border: 1px solid black;
 }
