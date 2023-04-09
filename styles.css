@@ -71,38 +71,103 @@ div.main-row.menu-item {
 }
 
 .search-bar-container {
-    background-color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.search-bar-container > svg {
+    height: 25px;
+}
+
+.search-bar-container > .search-bar {
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    flex: 1 1 100px;
+    max-width: 450px;
+    height: 22px;
+    padding: 6px;
 }
 
 .logged-in-user-info-container {
-    background-color: lightblue;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
 
+div.logged-in-user-info-container > svg {
+    height: 25px;
+}
+
+div.logged-in-user-info-container > img {
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+div.logged-in-user-info-container > p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
 .user-info-container {
-    background-color: aqua;
     display: grid;
+    gap: 5px;
     grid-template-columns: 110px 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
+div.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.user-info-container img {
+    height: 65px;
+    border-radius: 65px;
+    border: 2px solid black;
+}
+
+div.user-info-container p.upper-text {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 0.85rem;
+    align-self: end;
+}
+
+div.user-info-container p.lower-text {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 700;
+    align-self: start;
+}
+
 .header-button-container {
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .user-info-container > .icon-container {
-    background-color: rgb(165, 145, 107);
     grid-row: 1/3;
+}
+
+.header-button {
+    background-color: #1992d4;
+    border: none;
+    width: 80px;
+    height: 32px;
+    border-radius: 20px;
+    color: white;
 }
 
 
